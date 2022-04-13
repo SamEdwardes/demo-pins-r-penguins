@@ -2,6 +2,10 @@
 
 A demo of using pins with RStudio pro products.
 
+- Data: <https://colorado.rstudio.com/rsc/demo-pins-penguins-data/>
+- Report: <https://colorado.rstudio.com/rsc/demo-pins-r-penguins/>
+- Code: <https://github.com/SamEdwardes/demo-pins-r-penguins>
+
 ![](app/imgs/connect-screenshot.png)
 
 ## Usage
