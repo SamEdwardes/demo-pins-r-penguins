@@ -18,6 +18,8 @@ rmarkdown::render("app/report.Rmd")
 
 ## Deployment
 
+### Git-backed
+
 Update the *manifest.json* file:
 
 ```r
@@ -25,3 +27,14 @@ rsconnect::writeManifest("app", appFiles = c("report.Rmd", "imgs"))
 ```
 
 Then commit any changes to git. The report will automatically redeploy.
+
+### Programatic
+
+You can also deploy the app using the `rsconnect` api:
+
+```r
+rsconnect::deployDoc(
+  doc = "app/report.Rmd",
+  appTitle = "Pins Example"
+)
+```
